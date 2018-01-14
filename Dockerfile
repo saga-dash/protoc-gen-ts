@@ -49,4 +49,4 @@ RUN apk add --no-cache curl && \
 
 RUN npm install -g ts-protoc-gen
 
-ENTRYPOINT ["/usr/bin/protoc"]
+ENTRYPOINT ["/usr/bin/protoc", "-I/protobuf"]
