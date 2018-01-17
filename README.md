@@ -12,6 +12,7 @@ docker run --rm\
  sagadash/protoc-gen-ts\
  --plugin=protoc-gen-ts=/usr/local/bin/protoc-gen-ts\
  --js_out=import_style=commonjs,binary:models\
+ --js_service_out=models\
  --ts_out=service=true:models -Iproto proto/*.proto
 ```
 
